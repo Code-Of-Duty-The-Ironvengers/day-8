@@ -150,6 +150,11 @@ class StudentPerson extends Human {
     super(name, age, height, true);
     this.topic = topic;
   }
+
+  birthday() {
+    this.age -= 10;
+    // this.age = this.age - 10;
+  }
 }
 
 const vincent = new StudentPerson("Vincent", 31, 169, "Web Dev");
